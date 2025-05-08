@@ -45,8 +45,18 @@ POST /predict
 
 ```json
 {
-  "prediction": "rice"
+  "recommended_crop": {
+    "ml_prediction": "rice",
+    "rule_suggestions": [
+      "maize",
+    ],
+    "parameter_modifications": {
+      "ph": "Increase slightly to ~6.5 for better nutrient absorption.",
+      "K": "Increase potassium to at least 40 mg/kg to enhance grain quality."
+    }
+  }
 }
+
 ```
 
 
